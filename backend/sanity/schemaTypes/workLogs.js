@@ -6,12 +6,13 @@ export const WorkLogs = {
         {
         name: "date",
         title: "Dato",
-        type: "string"
+        type: "date"
         },
         {
         name: "memberName",
         title: "Medlem navn",
-        type: "string"
+        type: "array",
+        of: [{type: 'reference', to: [{type: 'members'}]}]
         },
         {
         name: "workTitle",
@@ -20,8 +21,10 @@ export const WorkLogs = {
         },
         {
         name: "duration",
-        title: "Varighet",
-        type: "string"
+        title: "Varighet i timer",
+        type: "string",
+        
+        
         },
 
     ]

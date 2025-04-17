@@ -2,12 +2,12 @@
 
 export const members = {
     name: "members",
-    title: "Members",
+    title: "Medlemmer",
     type: "document",
     fields: [
         {
             name: "memberName",
-            title: "Medlem Name",
+            title: "Medlem navn",
             type: "string"
         }, 
         {
@@ -19,12 +19,13 @@ export const members = {
             name: "hobbies",
             title: "Interesser",
             type: "array",
+            of: [{type: 'string', title: 'Intresser'}]
 
         },
         {
             name: "Image",
             title: "Bilde",
-            type: "Image"
+            type: "image"
             
         },
         {
