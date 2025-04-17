@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom"; 
+
 export default function Header(){
     return(
         <header>
             <p>Group21</p>
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Majed</a></li>
-                    <li><a href="#">Aram</a></li>
-                    <li><a href="#">Mahmmoud</a></li>   
-                </ul>
+                <Link to="/">Home</Link>
+                <Link to="majed">Majed</Link>
+                <Link to="aram">Aram</Link>
+                <Link to="mahmod">Mahmod</Link>
+                <Link>H</Link>
             </nav>
         </header>
     )
