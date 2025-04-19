@@ -9,11 +9,11 @@ export const members = {
             name: "memberName",
             title: "Medlem navn",
             type: "string"
-        }, 
+        },
         {
             name: "description",
             title: "Beskrivelse",
-            type: "string"
+            type: "text"
         },
         {
             name: "hobbies",
