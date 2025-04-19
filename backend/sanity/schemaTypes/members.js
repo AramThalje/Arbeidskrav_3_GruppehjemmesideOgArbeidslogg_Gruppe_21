@@ -11,6 +11,12 @@ export const members = {
             type: "string"
         },
         {
+            name: "email",
+            tltle: "E-post",
+            type: "string",
+
+        },
+        {
             name: "description",
             title: "Beskrivelse",
             type: "text"
