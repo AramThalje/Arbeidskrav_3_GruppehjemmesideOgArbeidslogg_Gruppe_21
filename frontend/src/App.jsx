@@ -1,23 +1,21 @@
 
 import './App.css'
-import Header from '../components/Header'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from '../components/Layout'
 import Home from '../components/Home'
-import { Route, Routes } from 'react-router-dom'
-import UsersCards from '../components/UsersCards'
+import UserDetail from '../components/UserDetail'
 
 function App() {
-
   return (
-    <>
-    
-    {/* <Routes>
-      <Route path="/home" element={<Home/>} />
-      <Route path='/user' element={<UsersCards/>}/>
-    </Routes> */}
-      <Header/>
-      <Home />
-    </>
-  )
+        <Router>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/:memberName" element={<UserDetail />} />
+            </Routes>
+          </Layout>
+        </Router>
+      );
 }
 
-export default App
+export default App;

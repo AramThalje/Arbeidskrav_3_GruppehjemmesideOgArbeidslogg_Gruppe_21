@@ -1,12 +1,15 @@
 
 
-export default function Log() {
+export default function Log({log}) {
+  const { date, workTitle, duration, memberName } = log;
   return (
     <>
-    <p>12.03.2025</p>
-    <p>Bruker 1</p>
-    <p>Oppgave #1: Create react</p>
-    <p>2 timer</p>
+    <tr>
+      <td>{new Date(date).toLocaleDateString('no-NO')}</td>
+      <td>{memberName.join(', ')}</td>
+      <td>{workTitle}</td>
+      <td>{duration} timer</td>
+    </tr>
     </>
   )
 }

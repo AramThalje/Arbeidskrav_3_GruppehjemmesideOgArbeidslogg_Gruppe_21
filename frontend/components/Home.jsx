@@ -4,13 +4,11 @@ import UsersCards from "./UsersCards";
 export default function Home(){
     return (
         <>
-        <h2>Group members </h2>
+        <h2 className="section-title">Gruppemedlemmer</h2>
+      <UsersCards />
 
-        <UsersCards/>
-
-        <h2>Work Log</h2>
-
-        <Logs/>
+      <h2 className="section-title">Arbeidslogg</h2>
+      <Logs />
 
        
         </>

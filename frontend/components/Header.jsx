@@ -9,7 +9,7 @@ export default function Header(){
                 <Link to="majed">Majed</Link>
                 <Link to="aram">Aram</Link>
                 <Link to="mahmod">Mahmod</Link>
-                <Link>H</Link>
+                
             </nav>
         </header>
     )
