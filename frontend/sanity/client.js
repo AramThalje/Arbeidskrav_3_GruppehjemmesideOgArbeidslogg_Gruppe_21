@@ -9,6 +9,7 @@ export const client = createClient({
   useCdn: true,
 });
 
+
 /*
 
 sette opp en for å skrive til klient

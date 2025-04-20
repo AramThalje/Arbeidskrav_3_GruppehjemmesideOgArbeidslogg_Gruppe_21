@@ -1,6 +1,6 @@
 // src/components/UsersCards.jsx
 import React, {useEffect, useState} from 'react';
-import client from '../sanity/client';      
+import {client} from '../sanity/client';      
 import UserCard from './UserCard';
 
 export default function UsersCards() {

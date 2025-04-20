@@ -1,20 +1,30 @@
-import { useEffect, useState } from "react";
-import Log from "./Log";
-import  client  from "../sanity/client";
+// 
+
+
+
+
+import React, { useEffect, useState } from 'react';
+import { client } from '../sanity/client';
+import Log from './Log';
 
 export default function Logs() {
   const [logs, setLogs] = useState([]);
 
   useEffect(() => {
     client.fetch(
-      `*[_type == "workLogs"] | order(date desc){ _id, date, workTitle, duration, memberName[]->memberName }`
+      `*[_type == "workLogs"] | order(date desc){
+        _id,
+        date,
+        workTitle,
+        duration,
+        "members": memberName[]->memberName
+      }`
     )
-    .then(setLogs)
+    .then(data => setLogs(data))
     .catch(console.error);
   }, []);
 
   return (
-    <>
     <table className="logs-table">
       <thead>
         <tr>
@@ -28,6 +38,5 @@ export default function Logs() {
         {logs.map(log => <Log key={log._id} log={log} />)}
       </tbody>
     </table>
-    </>
-  )
+  );
 }

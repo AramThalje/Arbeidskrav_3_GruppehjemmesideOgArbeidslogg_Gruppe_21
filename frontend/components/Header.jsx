@@ -4,7 +4,7 @@ export default function Header(){
     return(
         <header className="header">
             <p>Group21</p>
-            <nav>
+            <nav className="navBar">
                 <Link to="/">Home</Link>
                 <Link to="majed">Majed</Link>
                 <Link to="aram">Aram</Link>
