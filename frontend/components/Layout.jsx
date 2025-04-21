@@ -9,8 +9,10 @@ export default function Layout({ children }) {
   useEffect(() => {
     client.fetch(`*[_type == "members"]{ memberName }`)
       .then(data => setMembers(data))
+
       .catch(console.error);
   }, []);
+  
 
   return (
     <>
