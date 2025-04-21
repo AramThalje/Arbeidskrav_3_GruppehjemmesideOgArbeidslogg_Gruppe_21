@@ -44,7 +44,7 @@ export default function UserDetail() {
     .catch(console.error);
   }, [member]);
 
-  
+  if (!member) return <p>Laster...</p>;
 
   return (
     <div className="user-detail">
