@@ -18,10 +18,10 @@ export default function Layout({ children }) {
     <>
       <header className="header">
         <div className="container">
-          <h1 className="logo">TEAM X</h1>
+          <h1 className="logo">Group 21</h1>
           <nav>
             <ul className="nav-list">
-              <li><Link to="/">Hjem</Link></li>
+              <li><Link to="/">Home</Link></li>
               {members.map((m, i) => {
                 const slug = m.memberName.replace(/\s+/g, '-');
                 return (
