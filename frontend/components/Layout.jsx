@@ -1,4 +1,3 @@
-// File: src/components/Layout.jsx
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { client } from '../sanity/client';

@@ -1,6 +1,3 @@
-// 
-
-
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { client } from '../sanity/client';
@@ -30,7 +27,7 @@ export default function UserDetail() {
     .catch(console.error);
   }, [memberName]);
 
-  // Fetch logs for the member, once member is loaded
+  // Fetch de medlemmer fra Sanity
   useEffect(() => {
     if (!member) return;
 
