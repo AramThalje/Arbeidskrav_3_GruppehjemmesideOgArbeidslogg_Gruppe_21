@@ -17,7 +17,7 @@ export default function Layout({ children }) {
     <>
       <header className="header">
         <section className="container">
-          <h1 className="logo">GROUP 21</h1>
+          <Link to="/"><h1 className="logo">GROUP 21</h1></Link>
           <nav>
             <ul className="nav-list">
               <li><Link to="/">Home</Link></li>
