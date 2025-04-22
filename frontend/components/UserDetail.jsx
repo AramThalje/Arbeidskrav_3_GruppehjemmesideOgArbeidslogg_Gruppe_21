@@ -47,8 +47,8 @@ export default function UserDetail() {
   if (!member) return <p>Laster...</p>;
 
   return (
-    <div className="user-detail">
-      <div className="detail-header">
+    <section className="user-detail">
+      <section className="detail-header">
         <img src={member.imageUrl} alt={member.memberName} className="detail-img" />
         <div className="detail-info">
           <h2>{member.memberName}</h2>
@@ -58,7 +58,7 @@ export default function UserDetail() {
             {member.hobbies.map((hobby, i) => <li key={i}>{hobby}</li>)}
           </ul>
         </div>
-      </div>
+      </section>
 
       <h3>Arbeidslogg</h3>
       {logs.length > 0 ? (
@@ -83,6 +83,6 @@ export default function UserDetail() {
       ) : (
         <p>Ingen arbeidslogger funnet.</p>
       )}
-    </div>
+    </section>
   );
 }

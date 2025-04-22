@@ -17,10 +17,10 @@ export default function UsersCards() {
   }, []);
 
   return (
-    <div className="cards-grid">
+    <section className="cards-grid">
       {members.map(member => (
         <UserCard key={member._id} member={member}/>
       ))}
-    </div>
+    </section>
   );
 }

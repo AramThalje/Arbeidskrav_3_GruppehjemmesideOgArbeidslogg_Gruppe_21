@@ -16,7 +16,7 @@ export default function Layout({ children }) {
   return (
     <>
       <header className="header">
-        <div className="container">
+        <section className="container">
           <h1 className="logo">GROUP 21</h1>
           <nav>
             <ul className="nav-list">
@@ -31,7 +31,7 @@ export default function Layout({ children }) {
               })}
             </ul>
           </nav>
-        </div>
+        </section>
       </header>
       <main className="container">
         {children}
